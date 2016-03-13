@@ -1,0 +1,55 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3SH</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+  </head>
+  <body>
+  <div class="top-bar">
+    <div class="top-bar-left">
+        <img src="{{root}}/assets/img/site/3sh-logo.jpg">
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><a href="{{root}}/index.html">Heim</a></li>
+        <li><a href="{{root}}/about.html">Um 3SH</a></li>
+        <li><a href="{{root}}/training.html">Æfingar</a></li>
+        <li><a href="{{root}}/triathlon101.html">Hvað er þríþraut?</a></li>
+        <li><a href="{{root}}/triday.html">Þríþrautardagurinn 2016 </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="">
+    <div class="row column text-center" >
+      <img src="{{root}}assets/img/site/header-swim.jpg" style="padding-right: 20px">
+    </div>
+    <p></p>
+  </div>
+
+  <div class="row" id="content">
+    <div class="medium-8 columns">
+
+      {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+      {{> body}}
+
+    </div>
+
+    {{> right-sidebar}}
+  </div>
+
+
+  <div class="row column">
+
+  </div>
+
+    <script src="{{root}}assets/js/app.js"></script>
+
+  </body>
+</html>
