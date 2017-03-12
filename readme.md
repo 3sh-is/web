@@ -63,3 +63,6 @@ http://localhost:8000
 ```
 
 To create compressed, production-ready assets, run `npm run build`.
+
+Deployment er manual á https://vef2.c.is:2083/
+
