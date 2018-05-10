@@ -127,6 +127,7 @@ function server(done) {
 function watch() {
   gulp.watch(PATHS.assets, copy);
   gulp.watch('src/pages/**/*.html', gulp.series(pages, browser.reload));
+  gulp.watch('src/pages/*.html', gulp.series(pages, browser.reload));
   gulp.watch('src/{layouts,partials}/**/*.html', gulp.series(resetPages, pages, browser.reload));
   gulp.watch('src/assets/scss/**/*.scss', sass);
   gulp.watch('src/assets/js/**/*.js', gulp.series(javascript, browser.reload));
